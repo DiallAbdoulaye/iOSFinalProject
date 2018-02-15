@@ -12,6 +12,12 @@
 		B86EC7CB20358B3100848B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86EC7C920358B3100848B84 /* Main.storyboard */; };
 		B86EC7CD20358B3100848B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86EC7CC20358B3100848B84 /* Assets.xcassets */; };
 		B86EC7D020358B3100848B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86EC7CE20358B3100848B84 /* LaunchScreen.storyboard */; };
+		B86EC7D820358BFE00848B84 /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86EC7D720358BFE00848B84 /* SignInView.xib */; };
+		B86EC7DA203590D200848B84 /* SignupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86EC7D9203590D200848B84 /* SignupView.xib */; };
+		B86EC7DC2035932600848B84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EC7DB2035932600848B84 /* LoginViewController.swift */; };
+		B86EC7DE2035952500848B84 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EC7DD2035952500848B84 /* SignInView.swift */; };
+		B86EC7E02035970000848B84 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EC7DF2035970000848B84 /* SignupView.swift */; };
+		B86EC7E22035F12500848B84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EC7E12035F12500848B84 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		B86EC7CC20358B3100848B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B86EC7CF20358B3100848B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B86EC7D120358B3100848B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B86EC7D720358BFE00848B84 /* SignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		B86EC7D9203590D200848B84 /* SignupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupView.xib; sourceTree = "<group>"; };
+		B86EC7DB2035932600848B84 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B86EC7DD2035952500848B84 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B86EC7DF2035970000848B84 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		B86EC7E12035F12500848B84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				B86EC7CC20358B3100848B84 /* Assets.xcassets */,
 				B86EC7CE20358B3100848B84 /* LaunchScreen.storyboard */,
 				B86EC7D120358B3100848B84 /* Info.plist */,
+				B86EC7DB2035932600848B84 /* LoginViewController.swift */,
+				B86EC7DD2035952500848B84 /* SignInView.swift */,
+				B86EC7D720358BFE00848B84 /* SignInView.xib */,
+				B86EC7DF2035970000848B84 /* SignupView.swift */,
+				B86EC7D9203590D200848B84 /* SignupView.xib */,
+				B86EC7E12035F12500848B84 /* User.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -124,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B86EC7D020358B3100848B84 /* LaunchScreen.storyboard in Resources */,
+				B86EC7DA203590D200848B84 /* SignupView.xib in Resources */,
 				B86EC7CD20358B3100848B84 /* Assets.xcassets in Resources */,
+				B86EC7D820358BFE00848B84 /* SignInView.xib in Resources */,
 				B86EC7CB20358B3100848B84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86EC7DC2035932600848B84 /* LoginViewController.swift in Sources */,
 				B86EC7C820358B3100848B84 /* ViewController.swift in Sources */,
+				B86EC7E22035F12500848B84 /* User.swift in Sources */,
+				B86EC7DE2035952500848B84 /* SignInView.swift in Sources */,
 				B86EC7C620358B3100848B84 /* AppDelegate.swift in Sources */,
+				B86EC7E02035970000848B84 /* SignupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
