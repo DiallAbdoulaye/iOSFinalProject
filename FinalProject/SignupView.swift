@@ -15,17 +15,18 @@ protocol SignUpViewDelegate{
 class SignupView: UIView {
 
     var delegate : SignUpViewDelegate?
-    
     @IBOutlet var contentView: UIView!
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var confirmPassword: UITextField!
     @IBOutlet var gotoLogin: UIButton!
     @IBOutlet var signUp: UIButton!
-    @IBAction func onClick(){
-        if (email.text?.isEmpty ?? false && password.text?.isEmpty ?? false && confirmPassword.text?.isEmpty ?? false){
-            if(password === confirmPassword){
-                
+    
+    @IBAction func signUpClick(){
+        if (email.text?.isEmpty ?? true && password.text?.isEmpty ?? true && confirmPassword.text?.isEmpty ?? true){}
+        else{
+            if(password.text == confirmPassword.text){
+                User.StaticUser.saveIntoStaticUser(userEmail:email.text!, userPassword:password.text!)                
             }
         }
     }
