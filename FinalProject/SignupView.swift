@@ -27,19 +27,32 @@ class SignupView: UIView {
     @IBAction func signUpClick(){
         if (email.text?.isEmpty ?? true || password.text?.isEmpty ?? true || confirmPassword.text?.isEmpty ?? true){
             validMessage.text = ""
-            errorMessage.text = "Email or password invalid"
+            errorMessage.text = "Please fill the fields"
         }
         else{
-            if(password.text == confirmPassword.text){
-                StaticUser.instance?.user = User(email:email.text!,password:password.text!)
-//                StaticUser.user?.email = email.text
-//                StaticUser.user?.password = password.text
-                
-                errorMessage.text = ""
-                validMessage.text = "Successfull sign up"
-                print("Email : " + (StaticUser.instance?.user?.email)!)
-                print("Password : " + (StaticUser.instance?.user?.password)!)
+            if(isValidEmail(email: email.text!)){
+                if(isPasswordValid(password:password.text!)){
+                    if(password.text == confirmPassword.text){
+                        StaticUser.instance?.user = User(email:email.text!,password:password.text!)
+                        errorMessage.text = ""
+                        validMessage.text = "Successfull sign up"
+                        print("Email : " + (StaticUser.instance?.user?.email)!)
+                        print("Password : " + (StaticUser.instance?.user?.password)!)
 
+                        }
+                        else{
+                            validMessage.text = ""
+                            errorMessage.text = "Theses password don't match"
+                        }
+                }
+                else{
+                    validMessage.text = ""
+                    errorMessage.text = "Password is not valid"
+                }
+            }
+            else{
+                validMessage.text = ""
+                errorMessage.text = "Email is not valid"
             }
         }
     }
@@ -63,6 +76,17 @@ class SignupView: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+    }
+    
+    func isValidEmail(email:String) -> Bool {
+        let emailRegEx = "^[A-Za-z0-9.+]+@[A-Za-z0-9]+.[A-Za-z]{2,3}$"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        let result = emailTest.evaluate(with: email)
+        return result
+    }
+    func isPasswordValid(password : String) -> Bool{
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])[A-Za-z\\d$@$#!%*?&]{8,}")
+        return passwordTest.evaluate(with: password)
     }
 
 }
