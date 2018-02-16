@@ -8,13 +8,12 @@
 
 import UIKit
 
-class User: NSObject {
-    static let StaticUser: User = User()
-    var email: String = ""
-    var password: String = ""
-    func saveIntoStaticUser(userEmail:String,userPassword:String){
-        User.StaticUser.email = userEmail
-        User.StaticUser.password = userPassword
+class User {
+    var email: String? = nil
+    var password: String? = nil
+    init(email:String,password:String){
+        self.email = email
+        self.password = password
     }
 }
 

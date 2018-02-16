@@ -19,19 +19,26 @@ class SignupView: UIView {
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var confirmPassword: UITextField!
+    @IBOutlet var errorMessage: UILabel!
+    @IBOutlet var validMessage: UILabel!
     @IBOutlet var gotoLogin: UIButton!
     @IBOutlet var signUp: UIButton!
     
     @IBAction func signUpClick(){
-        if (email.text?.isEmpty ?? true && password.text?.isEmpty ?? true && confirmPassword.text?.isEmpty ?? true){
-            print("Email or password invalid")
+        if (email.text?.isEmpty ?? true || password.text?.isEmpty ?? true || confirmPassword.text?.isEmpty ?? true){
+            validMessage.text = ""
+            errorMessage.text = "Email or password invalid"
         }
         else{
             if(password.text == confirmPassword.text){
-                User.StaticUser.saveIntoStaticUser(userEmail:email.text!, userPassword:password.text!)
-                print("Successfull sign up")
-                print("Email : " + User.StaticUser.email)
-                print("Password : " + User.StaticUser.password)
+                StaticUser.instance?.user = User(email:email.text!,password:password.text!)
+//                StaticUser.user?.email = email.text
+//                StaticUser.user?.password = password.text
+                
+                errorMessage.text = ""
+                validMessage.text = "Successfull sign up"
+                print("Email : " + (StaticUser.instance?.user?.email)!)
+                print("Password : " + (StaticUser.instance?.user?.password)!)
 
             }
         }
