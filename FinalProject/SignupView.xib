@@ -104,7 +104,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NY3-bc-pP2">
                     <rect key="frame" x="8" y="226" width="359" height="22"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.2194307314" green="1" blue="0.050300892360000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>

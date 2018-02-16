@@ -42,7 +42,7 @@ class SignupView: UIView {
                         }
                         else{
                             validMessage.text = ""
-                            errorMessage.text = "Theses password don't match"
+                            errorMessage.text = "Theses passwords don't match"
                         }
                 }
                 else{
