@@ -1,4 +1,4 @@
-##BONUS 
+##BONUS
 
 Msg d'erreur : Label {color:red}
 Msg valid : Label {color:blue}
