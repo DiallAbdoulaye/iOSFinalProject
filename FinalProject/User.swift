@@ -9,9 +9,9 @@
 import UIKit
 
 class User: NSObject {
-    var email:String
-    var password:String
-    static let StaticUser: User? = User(email: self.email, password: self.password)
+    var email: String
+    var password: String
+    static let StaticUser: User? = User(email: email, password: password)
     init(email:String,password:String) {
         self.email = email
         self.password = password
