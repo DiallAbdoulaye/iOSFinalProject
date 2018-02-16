@@ -1,6 +1,6 @@
 ##BONUS
 
-Msg d'erreur : Label {color:red}
+Msg d'erreur : Label {color:red}\n
 Msg valid : Label {color:blue}
 Design pour iPad
 Validation Email : @, [.fr,.com...] {Msg d'erreur : Email is not valid}
