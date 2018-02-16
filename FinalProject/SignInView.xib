@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -27,31 +27,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVS-xI-78h">
-                    <rect key="frame" x="8" y="28" width="41" height="21"/>
+                    <rect key="frame" x="8" y="78" width="41" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCo-9O-Xis">
-                    <rect key="frame" x="8" y="95" width="74" height="21"/>
+                    <rect key="frame" x="8" y="145" width="74" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ti0-C4-wwg">
-                    <rect key="frame" x="8" y="57" width="359" height="30"/>
+                    <rect key="frame" x="8" y="107" width="359" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcv-hl-aSC">
-                    <rect key="frame" x="8" y="124" width="359" height="30"/>
+                    <rect key="frame" x="8" y="174" width="359" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQL-eE-x3E">
-                    <rect key="frame" x="8" y="186" width="359" height="50"/>
+                    <rect key="frame" x="8" y="268" width="359" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="yEg-xW-Bc1"/>
@@ -59,12 +59,15 @@
                     <state key="normal" title="Login">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </variation>
                     <connections>
                         <action selector="signInClick" destination="-1" eventType="touchUpInside" id="niS-nx-QFx"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-Wy-lB2">
-                    <rect key="frame" x="8" y="268" width="359" height="50"/>
+                    <rect key="frame" x="8" y="382" width="359" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="clW-P8-SON"/>
@@ -72,12 +75,15 @@
                     <state key="normal" title="Register">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </variation>
                     <connections>
                         <action selector="toRegisterClick" destination="-1" eventType="touchUpInside" id="pbS-JT-73z"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not register yet ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksi-x3-EmD">
-                    <rect key="frame" x="8" y="244" width="359" height="21"/>
+                    <rect key="frame" x="8" y="326" width="359" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -111,8 +117,12 @@
                 <constraint firstItem="tQL-eE-x3E" firstAttribute="top" secondItem="Zia-V0-4gU" secondAttribute="bottom" constant="5" id="KXF-i4-j4l"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9g9-JV-qeV" secondAttribute="trailing" constant="8" id="Lbs-bQ-Ulf"/>
                 <constraint firstItem="GvN-Wy-lB2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="Max-qn-oIA"/>
-                <constraint firstItem="UVS-xI-78h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="RIV-6g-lBR"/>
-                <constraint firstItem="tQL-eE-x3E" firstAttribute="top" secondItem="vcv-hl-aSC" secondAttribute="bottom" constant="32" id="T4N-oM-Sd6"/>
+                <constraint firstItem="UVS-xI-78h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="RIV-6g-lBR">
+                    <variation key="heightClass=regular-widthClass=regular" constant="58"/>
+                </constraint>
+                <constraint firstItem="tQL-eE-x3E" firstAttribute="top" secondItem="vcv-hl-aSC" secondAttribute="bottom" constant="32" id="T4N-oM-Sd6">
+                    <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                </constraint>
                 <constraint firstItem="vcv-hl-aSC" firstAttribute="leading" secondItem="UVS-xI-78h" secondAttribute="leading" id="TeM-Nu-Mmu"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vcv-hl-aSC" secondAttribute="trailing" constant="8" id="VyW-Dw-bwL"/>
                 <constraint firstItem="9g9-JV-qeV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="XOV-Ef-WEY"/>
@@ -126,12 +136,14 @@
                 <constraint firstItem="Zia-V0-4gU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="tUy-Qa-T5N"/>
                 <constraint firstItem="tQL-eE-x3E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="uiS-tI-t0b"/>
                 <constraint firstItem="vcv-hl-aSC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="wCB-Vx-niD"/>
-                <constraint firstItem="GvN-Wy-lB2" firstAttribute="top" secondItem="tQL-eE-x3E" secondAttribute="bottom" constant="32" id="xEC-6R-AcD"/>
+                <constraint firstItem="GvN-Wy-lB2" firstAttribute="top" secondItem="tQL-eE-x3E" secondAttribute="bottom" constant="32" id="xEC-6R-AcD">
+                    <variation key="heightClass=regular-widthClass=regular" constant="64"/>
+                </constraint>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ti0-C4-wwg" secondAttribute="trailing" constant="8" id="zsc-BF-5aD"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-22" y="41"/>
+            <point key="canvasLocation" x="-22.5" y="40.5"/>
         </view>
     </objects>
 </document>
