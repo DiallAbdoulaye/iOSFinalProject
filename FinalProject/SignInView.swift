@@ -20,6 +20,20 @@ class SignInView: UIView {
     @IBOutlet var signin: UIButton!
     @IBOutlet var register: UIButton!
     
+    @IBAction func signInClick(){
+        if (User.StaticUser.email.isEmpty && User.StaticUser.password.isEmpty){
+            print("Please register first")
+        }
+        else{
+            if(User.StaticUser.email == email.text && User.StaticUser.password == password.text){
+                print("Successfull login")
+            }
+            else{
+                print("Unable to find a match with this pair of email / password")
+            }
+        }
+    }
+    
     @IBAction func toRegisterClick(){
         delegate?.toRegister(clicked: true)
     }

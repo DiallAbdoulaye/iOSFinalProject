@@ -23,10 +23,16 @@ class SignupView: UIView {
     @IBOutlet var signUp: UIButton!
     
     @IBAction func signUpClick(){
-        if (email.text?.isEmpty ?? true && password.text?.isEmpty ?? true && confirmPassword.text?.isEmpty ?? true){}
+        if (email.text?.isEmpty ?? true && password.text?.isEmpty ?? true && confirmPassword.text?.isEmpty ?? true){
+            print("Email or password invalid")
+        }
         else{
             if(password.text == confirmPassword.text){
-                User.StaticUser.saveIntoStaticUser(userEmail:email.text!, userPassword:password.text!)                
+                User.StaticUser.saveIntoStaticUser(userEmail:email.text!, userPassword:password.text!)
+                print("Successfull sign up")
+                print("Email : " + User.StaticUser.email)
+                print("Password : " + User.StaticUser.password)
+
             }
         }
     }
