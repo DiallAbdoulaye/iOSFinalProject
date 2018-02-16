@@ -17,19 +17,23 @@ class SignInView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
+    @IBOutlet var errorMessage: UILabel!
+    @IBOutlet var validMessage: UILabel!
     @IBOutlet var signin: UIButton!
     @IBOutlet var register: UIButton!
     
     @IBAction func signInClick(){
-        if (User.StaticUser.email.isEmpty && User.StaticUser.password.isEmpty){
-            print("Please register first")
+        if (StaticUser.instance?.user == nil){
+            errorMessage.text = "Please register first"
         }
         else{
-            if(User.StaticUser.email == email.text && User.StaticUser.password == password.text){
-                print("Successfull login")
+            if(StaticUser.instance?.user?.email == email.text && StaticUser.instance?.user?.password == password.text){
+                errorMessage.text = ""
+                validMessage.text = "Successfull login"
             }
             else{
-                print("Unable to find a match with this pair of email / password")
+                validMessage.text = ""
+                errorMessage.text = "Unable to find a match with this pair of email / password"
             }
         }
     }

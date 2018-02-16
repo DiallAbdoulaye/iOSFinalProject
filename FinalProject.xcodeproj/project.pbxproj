@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25CE80362036F25C002AC1F8 /* StaticUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CE80352036F25C002AC1F8 /* StaticUser.swift */; };
 		B86EC7C620358B3100848B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EC7C520358B3100848B84 /* AppDelegate.swift */; };
 		B86EC7C820358B3100848B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EC7C720358B3100848B84 /* ViewController.swift */; };
 		B86EC7CB20358B3100848B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86EC7C920358B3100848B84 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25CE80352036F25C002AC1F8 /* StaticUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticUser.swift; sourceTree = "<group>"; };
 		B86EC7C220358B3100848B84 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86EC7C520358B3100848B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86EC7C720358B3100848B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				B86EC7DF2035970000848B84 /* SignupView.swift */,
 				B86EC7D9203590D200848B84 /* SignupView.xib */,
 				B86EC7E12035F12500848B84 /* User.swift */,
+				25CE80352036F25C002AC1F8 /* StaticUser.swift */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				B86EC7DC2035932600848B84 /* LoginViewController.swift in Sources */,
 				B86EC7C820358B3100848B84 /* ViewController.swift in Sources */,
 				B86EC7E22035F12500848B84 /* User.swift in Sources */,
+				25CE80362036F25C002AC1F8 /* StaticUser.swift in Sources */,
 				B86EC7DE2035952500848B84 /* SignInView.swift in Sources */,
 				B86EC7C620358B3100848B84 /* AppDelegate.swift in Sources */,
 				B86EC7E02035970000848B84 /* SignupView.swift in Sources */,

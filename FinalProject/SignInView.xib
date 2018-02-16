@@ -14,9 +14,11 @@
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="RDb-jG-eYS"/>
                 <outlet property="email" destination="Ti0-C4-wwg" id="4BC-Af-r5N"/>
+                <outlet property="errorMessage" destination="9g9-JV-qeV" id="bmR-rh-AX1"/>
                 <outlet property="password" destination="vcv-hl-aSC" id="hAn-p2-SHN"/>
                 <outlet property="register" destination="GvN-Wy-lB2" id="6Y2-JX-CSz"/>
                 <outlet property="signin" destination="tQL-eE-x3E" id="7dA-vY-8ut"/>
+                <outlet property="validMessage" destination="Zia-V0-4gU" id="XFd-Tw-afL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -86,10 +88,24 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zia-V0-4gU">
+                    <rect key="frame" x="8" y="159" width="359" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.2194307313647591" green="1" blue="0.050300892360841898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9g9-JV-qeV">
+                    <rect key="frame" x="8" y="159" width="359" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.092869963400000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Zia-V0-4gU" firstAttribute="top" secondItem="vcv-hl-aSC" secondAttribute="bottom" constant="5" id="2v9-P9-rMv"/>
                 <constraint firstItem="Ti0-C4-wwg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="3Lx-u4-N3E"/>
+                <constraint firstItem="9g9-JV-qeV" firstAttribute="top" secondItem="vcv-hl-aSC" secondAttribute="bottom" constant="5" id="4HE-yc-eet"/>
                 <constraint firstItem="ksi-x3-EmD" firstAttribute="top" secondItem="tQL-eE-x3E" secondAttribute="bottom" constant="8" id="58A-xg-QPp"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tQL-eE-x3E" secondAttribute="trailing" constant="8" id="7fr-j3-GEP"/>
                 <constraint firstItem="Ti0-C4-wwg" firstAttribute="top" secondItem="UVS-xI-78h" secondAttribute="bottom" constant="8" id="8dg-8U-WGV"/>
@@ -98,6 +114,8 @@
                 <constraint firstItem="PCo-9O-Xis" firstAttribute="top" secondItem="Ti0-C4-wwg" secondAttribute="bottom" constant="8" id="Eat-xQ-pk6"/>
                 <constraint firstItem="PCo-9O-Xis" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="GlW-QF-ztz"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GvN-Wy-lB2" secondAttribute="trailing" constant="8" id="I6s-Ur-RND"/>
+                <constraint firstItem="tQL-eE-x3E" firstAttribute="top" secondItem="Zia-V0-4gU" secondAttribute="bottom" constant="5" id="KXF-i4-j4l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9g9-JV-qeV" secondAttribute="trailing" constant="8" id="Lbs-bQ-Ulf"/>
                 <constraint firstItem="GvN-Wy-lB2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="Max-qn-oIA"/>
                 <constraint firstItem="UVS-xI-78h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="RIV-6g-lBR">
                     <variation key="heightClass=regular-widthClass=regular" constant="58"/>
@@ -107,11 +125,15 @@
                 </constraint>
                 <constraint firstItem="vcv-hl-aSC" firstAttribute="leading" secondItem="UVS-xI-78h" secondAttribute="leading" id="TeM-Nu-Mmu"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vcv-hl-aSC" secondAttribute="trailing" constant="8" id="VyW-Dw-bwL"/>
+                <constraint firstItem="9g9-JV-qeV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="XOV-Ef-WEY"/>
                 <constraint firstItem="PCo-9O-Xis" firstAttribute="leading" secondItem="UVS-xI-78h" secondAttribute="leading" id="fJ5-wE-XL4"/>
                 <constraint firstItem="UVS-xI-78h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="g4s-jw-fhL"/>
                 <constraint firstItem="Ti0-C4-wwg" firstAttribute="leading" secondItem="UVS-xI-78h" secondAttribute="leading" id="hGb-8U-4hW"/>
+                <constraint firstItem="tQL-eE-x3E" firstAttribute="top" secondItem="9g9-JV-qeV" secondAttribute="bottom" constant="5" id="lIU-61-KVs"/>
                 <constraint firstItem="vcv-hl-aSC" firstAttribute="top" secondItem="PCo-9O-Xis" secondAttribute="bottom" constant="8" id="oqm-BG-4vV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zia-V0-4gU" secondAttribute="trailing" constant="8" id="s7T-77-fCT"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ksi-x3-EmD" secondAttribute="trailing" constant="8" id="t2b-cW-F4i"/>
+                <constraint firstItem="Zia-V0-4gU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="tUy-Qa-T5N"/>
                 <constraint firstItem="tQL-eE-x3E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="uiS-tI-t0b"/>
                 <constraint firstItem="vcv-hl-aSC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="wCB-Vx-niD"/>
                 <constraint firstItem="GvN-Wy-lB2" firstAttribute="top" secondItem="tQL-eE-x3E" secondAttribute="bottom" constant="32" id="xEC-6R-AcD">
