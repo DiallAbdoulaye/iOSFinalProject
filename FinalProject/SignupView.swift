@@ -47,7 +47,7 @@ class SignupView: UIView {
                 }
                 else{
                     validMessage.text = ""
-                    errorMessage.text = "Password is not valid"
+                    errorMessage.text = "Password is not valid, must be minimun 8 characters"
                 }
             }
             else{
